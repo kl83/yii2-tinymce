@@ -5,6 +5,6 @@ class LangAsset extends \yii\web\AssetBundle
 {
     public function init()
     {
-        $this->sourcePath = __DIR__."/langs";
+        $this->sourcePath = __DIR__."/dist/langs";
     }
 }
