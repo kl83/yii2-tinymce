@@ -1,0 +1,19 @@
+{
+    "name": "kl83/yii2-tinymce",
+    "description": "Yii2 TinyMCE widget",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "^2.0.0",
+        "bower-asset/tinymce/tinymce-dist": "^4.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Solovyov",
+            "email": "solovyov.a.a.19@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "kl83\\tinymce\\": "" }
+    }
+}
