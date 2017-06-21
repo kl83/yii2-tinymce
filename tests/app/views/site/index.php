@@ -22,8 +22,10 @@ use app\models\Test;
     $form = ActiveForm::begin([ 'method' => 'get' ]);
     echo $form->field($model, 'content')->widget('kl83\tinymce\TinymceWidget', [
         'clientOptions' => [
-            'toolbar' => 'link',
-            'plugins' => 'link',
+            'toolbar' => 'link image',
+            'plugins' => 'link image',
+            'file_browser_callback' => new \yii\web\JsExpression("function(field_name, url, type, win) {
+            }"),
         ],
     ]);
     echo Html::submitButton();

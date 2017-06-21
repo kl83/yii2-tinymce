@@ -3,6 +3,7 @@ namespace kl83\tinymce;
 
 use Yii;
 use yii\helpers\Html;
+use \yii\helpers\Json;
 
 class TinymceWidget extends \yii\widgets\InputWidget
 {
@@ -33,7 +34,7 @@ class TinymceWidget extends \yii\widgets\InputWidget
         $name = $this->name ? $this->name : Html::getInputName($this->model, $this->attribute);
         $value = $this->name ? $this->value : $this->model->{$this->attribute};
 
-        $clientOptions = json_encode($this->clientOptions);
+        $clientOptions = Json::encode($this->clientOptions);
         $this->view->registerJs("
             $('textarea#$this->id').tinymce($clientOptions);
         ");
