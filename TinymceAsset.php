@@ -3,7 +3,7 @@ namespace kl83\tinymce;
 
 class TinymceAsset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@bower/tinymce/tinymce-dist';
+    public $sourcePath = '@bower/tinymce-dist';
     public $depends = [
         'yii\web\JqueryAsset',
     ];
