@@ -36,6 +36,7 @@ class TinymceWidget extends \yii\widgets\InputWidget
 
         $clientOptions = Json::encode($this->clientOptions);
         $this->view->registerJs("
+            tinymce.remove('#$this->id');
             $('textarea#$this->id').tinymce($clientOptions);
         ");
 
