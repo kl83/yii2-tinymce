@@ -1,6 +1,2 @@
-composer.phar
-composer.lock
-/vendor/
-tests/_output/*
-/tests/app/web/assets
-/nbproject
+/vendor
+.idea
